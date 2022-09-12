@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>title one</h1>
+<h2 align="center">title two</h2>
+<h3>title three</h3>
+<h4>title four</h4>
+
+<!--换行-->
+<br/>
+
+<p>hello</p>
+<!--分割线-->
+<hr/>
+<p>中文</p>
+
+<!--强调加重,加黑-->
+<strong>strong,加重,黑体</strong>
+<br/>
+<em>斜体</em>
+<br/>
+<em><strong>粗体和斜体同时具备</strong></em>
+
+<br/>
+<p>预格式:pre标签</p>
+<pre>
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("hello,world");
+        }
+    }
+</pre>
+
+<p>删除:标签del</p>
+<del>删除线abc，删除文本</del>
+
+
+<p>下划线:ins标签</p>
+<ins>给文本加下划线，划重点</ins>
+
+
+<p>引用图片:img标签</p>
+<p>img标签结合div标签实现位置center，left, right</p>
+<div align="center">
+    <img src="https://how2j.cn/example.gif" alt="this is a img"/>
+</div>
+
+<p>引用图片:img标签, alt标签</p>
+<img src="https://how2j.cn/example_not_exist.gif" alt="这是一个图片"/>
+
+
+<p>引用图片:img标签, 无alt标签</p>
+<img src="https://how2j.cn/example_not_exist.gif"/>
+
+<p>超链接a标签:href引用网址作为链接地址, target="_blank"新页面打开</p>
+<a href="https://baidu.com" target="_blank">百度一下，你就知道</a>
+
+<p>超链接a标签:href引用网址作为链接地址, 直接跳转，原页面覆盖,使用文本作为超链接入口</p>
+<a href="https://baidu.com">百度一下，你就知道</a>
+
+<p>鼠标放到跳转文本上有title文本出现</p>
+<a href="https://baidu.com" title="跳转到百度页面">百度一下，你就知道</a>
+
+<p>使用图片作为超链接入口</p>
+<a href="https://baidu.com" target="_blank">
+    <img src="https://how2j.cn/example.gif" alt="this is a img"/>
+</a>
+
+<p>table标签：表格</p>
+<p>tr标签：行(table row)</p>
+<p>td标签：列(table data)</p>
+
+<p>border属性：带边框的table</p>
+<table border="1" width="200px">
+    <tr>
+        <td width="50px">1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+</table>
+
+<table border="1" width="200px">
+    <tr>
+        <td width="%60" align="left">5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td align="center">7</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td align="right">9</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<p>table垂直对齐valign</p>
+<table border="1" width="200px">
+    <tr>
+        <td width="%60" valign="top">5</td>
+        <td height="60px">
+            6
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle">7</td>
+        <td height="60px">
+            8
+        </td>
+    </tr>
+    <tr>
+        <td valign="bottom">9</td>
+        <td height="60px">
+            0
+        </td>
+    </tr>
+</table>
+
+<p>table水平合并colspan, 合并列</p>
+<table border="1" width="200px">
+    <tr>
+        <td colspan="2">
+            1,2
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+</table>
+
+<p>table垂直合并rowspan, 合并行</p>
+<table border="1" width="200px">
+    <tr>
+        <td rowspan="2">
+            1,2
+        </td>
+        <td>4</td>
+    </tr>
+    <!-- row2继承了row1,所以第一列数据为1，2-->
+    <tr>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>
