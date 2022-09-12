@@ -44,7 +44,7 @@
 
 
 <p>引用图片:img标签</p>
-<p>img标签结合div标签实现位置center，left, right</p>
+<p>img标签结合div标签align属性实现位置center，left, right</p>
 <div align="center">
     <img src="https://how2j.cn/example.gif" alt="this is a img"/>
 </div>
@@ -158,6 +158,69 @@
     </tr>
 </table>
 
+<p>table背景色:bgcolor</p>
+<table border="1" width="200px">
+    <tr bgcolor="gray">
+        <td rowspan="2">
+            1,2
+        </td>
+        <td>4</td>
+    </tr>
+    <!-- row2继承了row1,所以第一列数据为1，2-->
+    <tr>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td bgcolor="#ff1493">6</td>
+    </tr>
+</table>
+
+
+<p>无序列表:ul/li</p>
+<ul>
+    <li>OT</li>
+    <li>LOL</li>
+</ul>
+
+
+<p>有序列表:ol(ordered list)/li</p>
+<ol>
+    <li>DATA</li>
+    <li>LOL</li>
+</ol>
+
+
+<p>div:块，自动换行(h1,table, p)</p>
+<div>first block</div>
+<div>second block</div>
+
+<p>在div标签设置属性style:左边距100px,则div块内的图片都具有了这个属性</p>
+<div style="margin-left: 100px">
+    <img src="https://how2j.cn/example.gif" alt="this is a img"/>
+    <br>
+    <img src="https://how2j.cn/example.gif" alt="this is a img"/>
+</div>
+
+<p>内联元素:不能自动换行(img, a, b, strong)</p>
+
+
+<p>无size属性， 默认字体</p>
+<font color="green">绿色默认字体大小</font>
+<p>size="+2" 大号字体</p>
+<font color="blue" size="+2">蓝色大号字体</font>
+
+<p>size="-2" 小号字体</p>
+<font color="red" size="-2">红色小号字体</font>
+
+<p>iframe标签,src内联网页, width, height</p>
+<iframe src="https://how2j.cn/" width="300px" height="300px">
+</iframe>
+
+<p>文本框,只能写一行</p>
+<input type="text">
+
+<input
 
 
 
