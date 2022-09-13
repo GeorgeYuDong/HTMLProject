@@ -204,7 +204,6 @@
 
 <p>内联元素:不能自动换行(img, a, b, strong)</p>
 
-
 <p>无size属性， 默认字体</p>
 <font color="green">绿色默认字体大小</font>
 <p>size="+2" 大号字体</p>
@@ -220,10 +219,8 @@
 <p>文本框,只能写一行</p>
 <input type="text">
 
-
 <p>文本框长度属性：size</p>
 <input type="text" size="10">
-
 
 <p>文本框初始值属性：value</p>
 <input type="text" size="10" value="初始值">
@@ -235,6 +232,118 @@
 <p>文本框输入的是密码 type:password,输入显示的是星号(黑圆点)</p>
 <input type="password" size="10">
 
+<p>表单用于向服务器提交数据：比如账号和密码</p>
+<p>表单get(默认提交方法)方法提交数据，可以在浏览器看到提交参数，即便是密码也可以看到</p>
+<form method="get" action="https://how2j.cn/study/login.jsp">
+    账号：<input type="text" name="name"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    <input type="submit" value="登录">
+</form>
+
+<p>表单form post方法提交type=submit数据action，浏览器看不到提交参数。二进制数据，比如上传文件，必须post提交</p>
+<form method="post" action="https://how2j.cn/study/login.jsp">
+    账号：<input type="text" name="name"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    <input type="submit" value="登录">
+</form>
+
+<p>
+    通过超链接访问某个地址是get方式 <br/>
+    通过输入地址访问也是get方式
+</p>
+
+<p>单选框</p>
+radio1:<input type="radio">
+radio2:<input type="radio">
+
+<p>单选框radio:默认选中checked</p>
+default radio: <input type="radio" checked="checked">
+
+<p>单选框radio分组，多个选项只能选择一个,设置都在name=activity属性里</p>
+radio1:<input type="radio" name="activity"> <br>
+radio2:<input type="radio" name="activity" checked="checked"> <br>
+radio3:<input type="radio" name="activity"> <br>
+
+
+<p>复选框checkbox分组，多个选项可能选择多个</p>
+checkbox1:<input type="checkbox"> <br>
+checkbox2:<input type="checkbox" checked="checked"> <br>
+checkbox3:<input type="checkbox"> <br>
+
+
+<p>下拉框列表select，多个option选项只能选择1个</p>
+<p>size属性代表下拉列表的长度</p>
+<select size="3">
+    <option>op1</option>
+    <option>op2</option>
+    <option>op3</option>
+</select>
+
+<p>multiple属性,使用ctrl或者shift,可实现下拉框多选</p>
+<p>对option标签设置selected属性,可实现默认下拉框元素选中</p>
+<select size="3" multiple="multiple">
+    <option>op1</option>
+    <option selected="selected">op2</option>
+    <option selected="selected">op3</option>
+</select>
+
+<p>文本域文本可以多行,可以有滚动条</p>
+<textarea>
+    abc
+    edf
+</textarea>
+
+<p>文本域文本设置宽度cols和行数rows属性</p>
+<textarea cols="9" rows="8">
+1
+12
+123
+1234
+12345
+123456
+1234567
+12345678
+123456789
+1234567890000
+1234567890123
+1234567890456
+</textarea>
+
+<p>普通按钮type=button</p>
+<input type="button">
+
+<p>普通按钮type=button不能提交, 点击没反应，不会提交</p>
+<p>提交按钮type=submit会提交</p>
+<p>重置按钮type=reset会把输入框的改动复原</p>
+<form method="get" action="https://how2j.cn/study/login.jsp">
+    账号：<input type="text" name="name"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    <input type="button" value="登录">
+    <input type="reset" value="重置">
+</form>
+
+
+<p>提交按钮type=image, 使用图像src提交</p>
+<form method="get" action="https://how2j.cn/study/login.jsp">
+    账号：<input type="text" name="name"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    <input type="image" src="https://how2j.cn/example.gif">
+</form>
+
+
+<p>button标签</p>
+<p>文本按钮</p>
+<button>登录</button>
+<p>图像按钮img标签src属性设置</p>
+<button><img src="https://how2j.cn/example.gif"/></button>
+
+
+<p>button表单登录按钮:type='submit'</p>
+<form method="get" action="https://how2j.cn/study/login.jsp">
+    账号：<input type="text" name="name"> <br/>
+    密码：<input type="password" name="password"> <br/>
+    <button type="submit">登录</button>
+</form>
 
 
 </body>
